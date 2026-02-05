@@ -99,14 +99,15 @@ h1{
 .links a:hover{ color: var(--text); }
 
 .avatar{
-  width: 150px;
-  height: 150px;
-  border-radius: 24px;
+  width: 120px;
+  height: 120px;
+  border-radius: 18px;
   object-fit: cover;
   border: 1px solid rgba(255,255,255,.16);
-  box-shadow: 0 0 0 6px var(--ring);
+  box-shadow: 0 0 0 4px var(--ring);
   background: rgba(255,255,255,.06);
 }
+
 
 .card{
   margin: 14px 0;
@@ -199,3 +200,4 @@ h1{
   .grid{ grid-template-columns: 1fr; }
   .avatar{ width: 130px; height: 130px; }
 }
+
