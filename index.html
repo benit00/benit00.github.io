@@ -1,130 +1,189 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Clair Jean Benito | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+
+  <!-- Bootstrap 5 (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Your custom styles -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="bg"></div>
 
-  <header class="container hero">
-    <div class="hero-left">
-      <p class="badge">Computer Science Student • UTM</p>
-      <h1>Clair Jean Benito</h1>
-      <p class="subtitle">
-        Web Development • Programming • Networking • Cybersecurity Fundamentals
-      </p>
+  <!-- Background -->
+  <div class="page-bg"></div>
 
-      <div class="hero-actions">
-        <a class="btn" href="#projects">View Projects</a>
-        <a class="btn ghost" href="#contact">Contact</a>
-      </div>
-
-      <div class="links">
-        <a href="mailto:clairben11@gmail.com">clairben11@gmail.com</a>
-        <span>•</span>
-        <a href="https://linkedin.com/in/clair-benito-8700b723a" target="_blank">LinkedIn</a>
-        <span>•</span>
-        <a href="https://github.com/benit00" target="_blank">GitHub</a>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark py-3">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Clair Jean Benito</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
       </div>
     </div>
+  </nav>
 
-    <div class="hero-right">
-      <!--  profile.jpeg image -->
-      <img class="avatar" src="assets/profile.jpeg" alt="Profile photo" />
+  <!-- Hero -->
+  <header class="container py-4 py-md-5">
+    <div class="row align-items-center g-4">
+      <!-- Text -->
+      <div class="col-12 col-lg-8">
+        <span class="badge rounded-pill text-bg-light text-dark px-3 py-2 mb-3">
+          Computer Science Student • UTM
+        </span>
+
+        <h1 class="display-5 fw-bold mb-2">Portfolio</h1>
+        <p class="lead text-light-75 mb-3">
+          Web Development • Programming • Networking • Cybersecurity Fundamentals
+        </p>
+
+        <p class="text-light-75 mb-4">
+          Computer Science student at the University of Technology Mauritius (UTM) with hands-on experience
+          in academic projects and competitions. Seeking a technical internship to apply problem-solving skills
+          in real-world projects.
+        </p>
+
+        <div class="d-flex flex-wrap gap-2">
+          <a class="btn btn-primary px-4" href="#projects">View Projects</a>
+          <a class="btn btn-outline-light px-4" href="#contact">Contact</a>
+        </div>
+
+        <div class="mt-3 small text-light-75">
+          <a class="link-light link-underline-opacity-0 link-underline-opacity-75-hover" href="mailto:clairben11@gmail.com">
+            clairben11@gmail.com
+          </a>
+          <span class="mx-2">•</span>
+          <a class="link-light link-underline-opacity-0 link-underline-opacity-75-hover" target="_blank"
+             href="https://linkedin.com/in/clair-benito-8700b723a">
+            LinkedIn
+          </a>
+          <span class="mx-2">•</span>
+          <a class="link-light link-underline-opacity-0 link-underline-opacity-75-hover" target="_blank"
+             href="https://github.com/benit00">
+            GitHub
+          </a>
+        </div>
+      </div>
+
+      <!-- Profile image -->
+      <div class="col-12 col-lg-4 text-center text-lg-end">
+        <div class="avatar-wrap ms-lg-auto">
+          <img src="assets/profile.jpg" alt="Profile" class="img-fluid avatar-img">
+        </div>
+      </div>
     </div>
   </header>
 
-  <main class="container">
-    <section class="card">
-      <h2>About</h2>
-      <p>
-        Computer Science student at the University of Technology Mauritius (UTM) with hands-on
-        experience in academic projects and competitions. Seeking a technical internship to apply
-        problem-solving skills in real-world projects.
+  <!-- Main content -->
+  <main class="container pb-5">
+
+    <!-- About -->
+    <section id="about" class="glass-card p-4 p-md-5 mb-4">
+      <h2 class="h4 fw-bold mb-3">About</h2>
+      <p class="mb-0 text-light-75">
+        I enjoy building web projects and learning practical computing skills through labs, competitions, and coursework.
+        I’m currently looking for a technical internship where I can contribute and grow.
       </p>
     </section>
 
-    <section class="card">
-      <h2>Technical Skills</h2>
-      <p class="skills">
-        Java, Python, PHP | HTML, CSS, JavaScript, Bootstrap | MySQL |
-        TCP/IP, OSI Model | Git, VS Code, XAMPP | Windows, Linux (basic)
+    <!-- Skills -->
+    <section id="skills" class="glass-card p-4 p-md-5 mb-4">
+      <h2 class="h4 fw-bold mb-3">Technical Skills</h2>
+      <p class="mb-0 text-light-75">
+        Java, Python, PHP • HTML, CSS, JavaScript, Bootstrap • MySQL • TCP/IP, OSI Model • Git, VS Code, XAMPP • Windows, Linux (basic)
       </p>
     </section>
 
-    <section id="projects" class="card">
-      <h2>Projects (Screenshots)</h2>
-
-      <div class="grid">
-        <!-- ✅ Project 1 -->
-        <article class="project">
-          <img src="assets/project1.png" alt="Project 1 screenshot" />
-          <div class="project-body">
-            <h3>Project 1 Title</h3>
-            <p>Short description (what it does + tools used).</p>
-            <div class="project-links">
-              <a href="#" target="_blank">GitHub</a>
-              <a href="#" target="_blank">Live Demo</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- ✅ Project 2 -->
-        <article class="project">
-          <img src="assets/project2.png" alt="Project 2 screenshot" />
-          <div class="project-body">
-            <h3>Project 2 Title</h3>
-            <p>Short description (what it does + tools used).</p>
-            <div class="project-links">
-              <a href="#" target="_blank">GitHub</a>
-              <a href="#" target="_blank">Live Demo</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- ✅ Project 3 -->
-        <article class="project">
-          <img src="assets/project3.png" alt="Project 3 screenshot" />
-          <div class="project-body">
-            <h3>Project 3 Title</h3>
-            <p>Short description (what it does + tools used).</p>
-            <div class="project-links">
-              <a href="#" target="_blank">GitHub</a>
-              <a href="#" target="_blank">Live Demo</a>
-            </div>
-          </div>
-        </article>
+    <!-- Projects -->
+    <section id="projects" class="glass-card p-4 p-md-5 mb-4">
+      <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
+        <h2 class="h4 fw-bold mb-0">Projects & Labs</h2>
+        <span class="small text-light-75">Click a screenshot to open it</span>
       </div>
 
-      <p class="hint">
-        Tip: you can click a screenshot to open it in a new tab.
-      </p>
+      <div class="row g-3">
+        <!-- Project 1 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="project-card h-100">
+            <img src="assets/project1.png" class="project-img" alt="Project 1">
+            <div class="p-3">
+              <h3 class="h6 fw-bold mb-1">Project 1 Title</h3>
+              <p class="small text-light-75 mb-2">Short description + tech used.</p>
+              <div class="d-flex gap-3 small">
+                <a class="link-primary" href="#" target="_blank">GitHub</a>
+                <a class="link-primary" href="#" target="_blank">Live</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="project-card h-100">
+            <img src="assets/project2.png" class="project-img" alt="Project 2">
+            <div class="p-3">
+              <h3 class="h6 fw-bold mb-1">Project 2 Title</h3>
+              <p class="small text-light-75 mb-2">Short description + tech used.</p>
+              <div class="d-flex gap-3 small">
+                <a class="link-primary" href="#" target="_blank">GitHub</a>
+                <a class="link-primary" href="#" target="_blank">Live</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="project-card h-100">
+            <img src="assets/project3.png" class="project-img" alt="Project 3">
+            <div class="p-3">
+              <h3 class="h6 fw-bold mb-1">Project 3 Title</h3>
+              <p class="small text-light-75 mb-2">Short description + tech used.</p>
+              <div class="d-flex gap-3 small">
+                <a class="link-primary" href="#" target="_blank">GitHub</a>
+                <a class="link-primary" href="#" target="_blank">Live</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </section>
 
-    <section id="contact" class="card">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:clairben11@gmail.com">clairben11@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/clair-benito-8700b723a" target="_blank">linkedin.com/in/clair-benito</a></p>
+    <!-- Contact -->
+    <section id="contact" class="glass-card p-4 p-md-5">
+      <h2 class="h4 fw-bold mb-3">Contact</h2>
+      <p class="mb-2 text-light-75">Email: <a class="link-light" href="mailto:clairben11@gmail.com">clairben11@gmail.com</a></p>
+      <p class="mb-0 text-light-75">LinkedIn: <a class="link-light" target="_blank" href="https://linkedin.com/in/clair-benito-8700b723a">clair-benito</a></p>
     </section>
 
-    <footer class="footer">
-      <p>© <span id="year"></span> Clair Jean Benito</p>
+    <footer class="text-center mt-4 small text-light-75">
+      © <span id="year"></span> Clair Jean Benito
     </footer>
+
   </main>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
-
-    // Optional: open screenshot in new tab when clicked
-    document.querySelectorAll(".project img").forEach(img => {
-      img.style.cursor = "zoom-in";
+    // Click-to-open for project images
+    document.querySelectorAll(".project-img").forEach(img => {
       img.addEventListener("click", () => window.open(img.src, "_blank"));
     });
   </script>
 </body>
 </html>
-
