@@ -75,7 +75,12 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-  color: #111827; /* near-black */
+  color: #ffffff; /* pure white */
+}
+
+h1 {
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
 p, li, span {
@@ -90,6 +95,13 @@ p, li, span {
   background: rgba(255, 255, 255, 0.85);
   border: 1px solid rgba(0, 0, 0, 0.05);
 }
+
+/* Hero subtitle (skills line) */
+.lead {
+  color: #e5e7eb;               /* light gray, very readable */
+  font-weight: 500;
+}
+
 
 
 
