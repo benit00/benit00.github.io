@@ -74,14 +74,17 @@ body {
   background-color: #f9fafb;
 }
 
-h1, h2, h3, h4, h5 {
-  color: #ffffff; /* pure white */
-}
+/*h1, h2, h3, h4, h5 {
+  color: #ffffff; /* pure white
+}*/
 
-h1 {
+/* Main hero title */
+h1.display-5 {
+  color: #ffffff;               /* pure white */
   font-weight: 700;
   letter-spacing: 0.5px;
 }
+
 
 p, li, span {
   color: #374151; /* readable dark gray */
@@ -101,6 +104,8 @@ p, li, span {
   color: #e5e7eb;               /* light gray, very readable */
   font-weight: 500;
 }
+
+
 
 
 
